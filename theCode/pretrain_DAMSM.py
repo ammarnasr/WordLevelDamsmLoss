@@ -140,7 +140,7 @@ def train(dataloader, cnn_model, rnn_model, batch_size, labels, optimizer, epoch
                     im = Image.fromarray(img_set)
                     fullpath = '%s/attention_maps%d.png' % (image_dir, step)
                     im.save(fullpath)
-                    mydriveimg = '/content/drive/My Drive/cubImage'
+                    mydriveimg = '/content/drive/My Drive/wldl'
                     drivepath = '%s/attention_maps%d.png' % (mydriveimg, epoch)
                     im.save(drivepath)
     print("keyTime |||||||||||||||||||||||||||||||")
