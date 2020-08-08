@@ -293,30 +293,30 @@ if __name__ == "__main__":
 
 
         if start_epoch == 0 :
-            w_loss0 = []
-            w_loss1 = []
-            s_loss0 = []
-            s_loss1 = []
-            w_loss = []
-            s_loss = []
+            tw_loss0 = []
+            tw_loss1 = []
+            ts_loss0 = []
+            ts_loss1 = []
+            vw_loss = []
+            vs_loss = []
         else:
-            with open('/content/drive/My Drive/wldl/w_loss0.pkl', 'rb') as f:
-                w_loss0 = pickle.load(f)
+            with open('/content/drive/My Drive/wldl/tw_loss0.pkl', 'rb') as f:
+                tw_loss0 = pickle.load(f)
 
-            with open('/content/drive/My Drive/wldl/w_loss1.pkl', 'rb') as f:
-                w_loss1 = pickle.load(f)
+            with open('/content/drive/My Drive/wldl/tw_loss1.pkl', 'rb') as f:
+                tw_loss1 = pickle.load(f)
 
-            with open('/content/drive/My Drive/wldl/s_loss0.pkl', 'rb') as f:
-                s_loss0 = pickle.load(f)
+            with open('/content/drive/My Drive/wldl/ts_loss0.pkl', 'rb') as f:
+                ts_loss0 = pickle.load(f)
 
-            with open('/content/drive/My Drive/wldl/s_loss1.pkl', 'rb') as f:
-                s_loss0 = pickle.load(f)
+            with open('/content/drive/My Drive/wldl/ts_loss1.pkl', 'rb') as f:
+                ts_loss1 = pickle.load(f)
 
-            with open('/content/drive/My Drive/wldl/w_loss.pkl', 'rb') as f:
-                w_loss = pickle.load(f)
+            with open('/content/drive/My Drive/wldl/vw_loss.pkl', 'rb') as f:
+                vw_loss = pickle.load(f)
 
-            with open('/content/drive/My Drive/wldl/w_loss.pkl', 'rb') as f:
-                s_loss = pickle.load(f)
+            with open('/content/drive/My Drive/wldl/vs_loss.pkl', 'rb') as f:
+                vs_loss = pickle.load(f)
 
                 
 
@@ -334,24 +334,24 @@ if __name__ == "__main__":
 
 
 
-                w_loss0.append(w_cur_loss0)
-                w_loss1.append(w_cur_loss1)
-                s_loss0.append(s_cur_loss0)
-                s_loss1.append(s_cur_loss1)
-                w_loss.append(w_loss)
-                s_loss.append(s_loss)
-                with open('/content/drive/My Drive/wldl/w_loss0.pkl', 'wb') as f:
-                    pickle.dump(w_loss0, f)
-                with open('/content/drive/My Drive/wldl/w_loss1.pkl', 'wb') as f:
-                    pickle.dump(w_loss1, f)
-                with open('/content/drive/My Drive/wldl/s_loss0.pkl', 'wb') as f:
-                    pickle.dump(s_loss0, f)
-                with open('/content/drive/My Drive/wldl/s_loss1.pkl', 'wb') as f:
-                    pickle.dump(s_loss1, f)
-                with open('/content/drive/My Drive/wldl/w_loss.pkl', 'wb') as f:
-                    pickle.dump(w_loss, f)
-                with open('/content/drive/My Drive/wldl/s_loss.pkl', 'wb') as f:
-                    pickle.dump(s_loss, f)
+                tw_loss0.append(w_cur_loss0)
+                tw_loss1.append(w_cur_loss1)
+                ts_loss0.append(s_cur_loss0)
+                ts_loss1.append(s_cur_loss1)
+                vw_loss.append(w_loss)
+                vs_loss.append(s_loss)
+                with open('/content/drive/My Drive/wldl/tw_loss0.pkl', 'wb') as f:
+                    pickle.dump(tw_loss0, f)
+                with open('/content/drive/My Drive/wldl/tw_loss1.pkl', 'wb') as f:
+                    pickle.dump(tw_loss1, f)
+                with open('/content/drive/My Drive/wldl/ts_loss0.pkl', 'wb') as f:
+                    pickle.dump(ts_loss0, f)
+                with open('/content/drive/My Drive/wldl/ts_loss1.pkl', 'wb') as f:
+                    pickle.dump(ts_loss1, f)
+                with open('/content/drive/My Drive/wldl/vw_loss.pkl', 'wb') as f:
+                    pickle.dump(vw_loss, f)
+                with open('/content/drive/My Drive/wldl/vs_loss.pkl', 'wb') as f:
+                    pickle.dump(vs_loss, f)
 
 
 
