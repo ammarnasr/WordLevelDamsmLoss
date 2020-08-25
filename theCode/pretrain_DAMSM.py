@@ -72,7 +72,7 @@ def train(dataloader, cnn_model, rnn_model, batch_size, labels, optimizer, epoch
 
         # words_features: batch_size x nef x 17 x 17
         # sent_code: batch_size x nef
-        print('imgs :', imgs.size())
+        print('imgs :', imgs[-1].size())
         print('cnn_model', cnn_model)
         words_features, sent_code = cnn_model(imgs[-1])
         # --> batch_size x nef x 17*17
